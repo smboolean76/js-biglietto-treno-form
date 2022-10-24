@@ -8,7 +8,7 @@
 // const btnTicketGenerator = document.getElementById("generator");
 const ticketForm = document.getElementById("ticket-form");
 const btnTicketReset = document.getElementById("reset");
-const ticketContainer =  document.querySelector('.ticket-container');
+const ticketContainer = document.querySelector('.ticket-container');
 
 ticketForm.addEventListener('submit', function(event) {
     event.preventDefault();
