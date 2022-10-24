@@ -1,0 +1,45 @@
+/*----------------
+    RESET
+-----------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------
+    COMMON
+-----------------*/
+
+body {
+    background-color: #b91450;
+}
+
+.page-container {
+    max-width: 62.5rem;
+    margin: auto;
+    padding: 1.25rem;
+}
+
+h1, h2 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ticket-form {
+    margin-bottom: 1.875rem;
+}
+.ticket-form, .ticket {
+    background-color: #fff;
+}
+.ticket-container {
+    display: none;
+}
+.ticket-container.show {
+    display: block;
+}
+.ticket__info {
+    display: flex;
+    justify-content: space-between;
+}

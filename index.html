@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Treno</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h1>calcola il prezzo del tuo biglietto</h1>
+        </header>
+        <main>
+            <!-- ticket form -->
+            <form id="ticket-form" class="ticket-form">
+                <div class="ticket-form__fields">
+                    <div class="ticket-form__item">
+                        <label for="name">Nome e cognome</label>
+                        <input type="text" id="name" placeholder="Inserisci il nome" pattern="[a-zA-Z\s]+" required>
+                    </div>
+                    <div class="ticket-form__item">
+                        <label for="km">Km da percorrere</label>
+                        <input type="number" min="1" id="km" placeholder="Inserisci i km" required>
+                    </div>
+                    <div class="ticket-form__item">
+                        <label for="age">Fascia d'età</label>
+                        <select id="age">
+                            <option value="adult">Maggiorenne</option>
+                            <option value="underage">Minorenne</option>
+                            <option value="over">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ticket-form__buttons">
+                    <button id="generator" type="submit">Genera</button>
+                    <button id="reset" type="reset">Annulla</button>
+                </div>
+            </form>
+            <!-- /ticket form -->
+            <!-- ticket -->
+            <div class="ticket-container">
+                <h2>Il tuo biglietto</h2>
+                <div class="ticket">
+                    <h3>Dettaglio passeggeri</h3>
+                    <div class="ticket__info">
+                        <div>
+                            <h3>Nome Passegero</h3>
+                            <div id="ticket-name"></div>
+                        </div>
+                        <div>
+                            <h5>Offerta</h5>
+                            <div id="ticket-offert"></div>
+                        </div>
+                        <div>
+                            <h5>Carrozza</h5>
+                            <div id="ticket-wagon"></div>
+                        </div>
+                        <div>
+                            <h5>Codice CP</h5>
+                            <div id="ticket-cp"></div>
+                        </div>
+                        <div>
+                            <h5>Costo Biglietto</h5>
+                            <div id="ticket-price"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ticket -->
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
